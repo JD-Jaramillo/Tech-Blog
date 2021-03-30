@@ -1,0 +1,38 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit Entry
+  </h2>
+  <form class="edit-entry-form">
+    <div>
+      <input name="entry-title" type="text" value="{{entry.title}}" />
+    </div>
+    <div>
+      <textarea name="entry-text">{{entry.entry_text}}</textarea>
+    </div>
+    <div>
+      Posted by you on {{format_date entry.created_at}}
+      |
+      <a href="/post/{{Entry.id}}">{{Entry.comments.length}} {{format_plural "comment" Entry.comments.length}}</a>
+    </div>
+    <button type="submit">Save Entry</button>
+    <button type="button" class="delete-post-btn">Delete Entry</button>
+  </form>
+</article>
+
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+
+{{> comments entry.comments}}
+
+<!--Scripts-->
+<script src="/js/edit-entry.js"></script>
+<script src="/js/delete-entry.js"></script>
+<script src="/js/comment.js"></script>

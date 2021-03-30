@@ -1,0 +1,18 @@
+{{> entry-info entry }}
+
+{{#if loogedIn}}
+<form class="comment-form">
+    <div>
+        <textarea name="comment-body"></textarea>
+    </div>
+    <div>
+        <button type="submit">Add Comment</button>
+    </div>
+</form>
+{{/if}}
+
+{{> comments entry.comments}}
+
+{{#if loogedIn}}
+<script src="/js/comment.js"></script>
+{{/if}}

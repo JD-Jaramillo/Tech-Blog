@@ -12,12 +12,10 @@ Entry.belongsTo(User, {
 
 Comment.belongsTo(User, {
     foreignKey: 'user_id',
-    onDelete: 'cascade'
 });
 
 Comment.belongsTo(Entry, {
-    foreignKey: 'comment_id',
-    onDelete: 'cascade'
+    foreignKey: 'entry_id',
 });
 
 User.hasMany(Comment, {
@@ -26,7 +24,7 @@ User.hasMany(Comment, {
 });
 
 Entry.hasMany(Comment, {
-    foreignKey: 'comment_id',
+    foreignKey: 'entry_id',
     onDelete: 'cascade'
 });
 
