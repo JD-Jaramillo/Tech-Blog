@@ -13,10 +13,10 @@
     <div>
       Posted by you on {{format_date entry.created_at}}
       |
-      <a href="/post/{{Entry.id}}">{{Entry.comments.length}} {{format_plural "comment" Entry.comments.length}}</a>
+      <a href="/entry/{{Entry.id}}">{{Entry.comments.length}} {{format_plural "comment" Entry.comments.length}}</a>
     </div>
     <button type="submit">Save Entry</button>
-    <button type="button" class="delete-post-btn">Delete Entry</button>
+    <button type="button" class="delete-entry-btn">Delete Entry</button>
   </form>
 </article>
 

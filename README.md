@@ -13,7 +13,6 @@ Blog site where developers can publish their blog posts and comment on other dev
 
 ![Watch the video](./GIFs/.gif)
 
-
 ## Requirements
 
 GIVEN a CMS-style blog site

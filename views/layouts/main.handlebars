@@ -10,27 +10,29 @@
 </head>
 
 <body>
-    <div class="flex-column justify-space-around">
-        <header class="display-flex justify-space-between align-center p-2">
-            <h1>
-                <a href="/">The Tech Blog</a>
-            </h1>
-            <nav>
-                <span><a href="/">Home</a></span>
-                {{#if loggedIn}}
-                <a href="/dashboard">Dashboard</a>
-                <button id="logout" class="btn">Logout</button>
-                {{else}}
-                <a href="/login">Login</a>
-                {{/if}}
-            </nav>
-        </header>
-        <main class="container container-fluid mt-5">
-            {{{ body }}}
-        </main>
-        <footer id="footer">
-            <p class="footbtn">Thanks for blogging with us!</p>
-        </footer>
+    <div class="page-container flex-column justify-space-around">
+        <div id="content-wrapper">
+            <header class="display-flex justify-space-between align-center p-2">
+                <h1>
+                    <a href="/">The Tech Blog</a>
+                </h1>
+                <nav>
+                    <span><a href="/">Home</a></span>
+                    {{#if loggedIn}}
+                    <a href="/dashboard">Dashboard</a>
+                    <button id="logout" class="btn">Logout</button>
+                    {{else}}
+                    <a href="/login">Login</a>
+                    {{/if}}
+                </nav>
+            </header>
+            <main class="container container-fluid mt-5">
+                {{{ body }}}
+            </main>
+            <footer id="footer">
+                <p class="footbtn">Thanks for blogging with us!</p>
+            </footer>
+        </div>
     </div>
     {{#if loggedIn}}
     <script src="/js/logout.js"></script>
