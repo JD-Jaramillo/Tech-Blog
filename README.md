@@ -6,10 +6,13 @@ Blog site where developers can publish their blog posts and comment on other dev
 * [Installation](#Installation)
 * [Contributing](#Contributing)
 
-
+Homepage
 ![screenshot of homepage](./public/images/homepage.png)
+Login-page
 ![screenshot of login-page](./public/images/login-page.png)
+Dashboard
 ![screenshot of dashboard](./public/images/dashboard.png)
+Edit-entry
 ![screenshot of edit-entry](./public/images/edit-entry.png)
 
 ## Requirements
