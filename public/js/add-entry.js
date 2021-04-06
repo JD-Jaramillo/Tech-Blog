@@ -24,7 +24,7 @@ async function newFormHandler(event) {
     document.location.replace('/dashboard');
     // otherwise, display the error
   } else {
-    alert(response.statusText);
+    console.log(err);
   }
 }
 

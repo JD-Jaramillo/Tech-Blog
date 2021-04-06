@@ -85,7 +85,7 @@ router.get('/entries/:id', (req, res) => {
         });
 });
 
-// Render the login page.  If the user is logged in, redirect to the home page.
+// Render the login page.  If the user is logged in, redirect to the dashboard.
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/dashboard');
@@ -102,7 +102,7 @@ router.get('/signup', (req, res) => {
         return;
     }
 
-    res.render('signup');
+    res.render('login');
 });
 
 module.exports = router;

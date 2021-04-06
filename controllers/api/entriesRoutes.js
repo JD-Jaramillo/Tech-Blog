@@ -1,14 +1,3 @@
-// const router = require('express').Router();
-// const { User, Entry, Comment } = require('../../models');
-// const session = require('express-session');
-// const withAuthorization = require('../../utils/auth');
-// const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
-
-
-// module.exports = router; 
-// Dependencies
-// Express.js connection
 const router = require('express').Router();
 // User Model, Post Model, and Comment Model
 const { User, Entry, Comment } = require('../../models');
