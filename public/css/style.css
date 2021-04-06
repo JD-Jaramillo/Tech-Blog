@@ -182,7 +182,7 @@
     margin: 35px;
     text-align: center;
     width: 250px;
-    height: 250px;
+    height: 300px;
   }
   .about-me {
     padding: 2%;
@@ -196,7 +196,7 @@
     margin: 3%;
     text-align: center;
     width: 250px;
-    height: 250px;
+    height: 300px;
   }
   .update-info {
     padding: 2%;
@@ -209,9 +209,13 @@
     border-style: outset;
     margin: 3%;
     text-align: center;
-    margin-left: 400px;
     width: 300px;
     height: 250px;
+  }
+
+  .comment-form {
+    margin: 20px;
+    text-align: center;
   }
 
   .content {
@@ -333,6 +337,7 @@
 
   .delete-entry-btn {
     background-color: #d41414;
+    margin: 10px;
   }
 
   .dashboard-entries li {

@@ -11,9 +11,7 @@
       <textarea name="entry-text">{{entry.entry_text}}</textarea>
     </div>
     <div>
-      Posted by you on {{format_date entry.created_at}}
-      |
-      <a href="/entry/{{Entry.id}}">{{Entry.comments.length}} {{format_plural "comment" Entry.comments.length}}</a>
+      Posted by you on {{format_date post.created_at}}
     </div>
     <button type="submit">Save Entry</button>
     <button type="button" class="delete-entry-btn">Delete Entry</button>
