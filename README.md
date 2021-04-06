@@ -3,15 +3,14 @@ Blog site where developers can publish their blog posts and comment on other dev
 
 ## Table of Contents
 
-* [JS](#JS)
-* [Requirements](#Requirements)
 * [Installation](#Installation)
 * [Contributing](#Contributing)
 
-## JS
- 
 
-![Watch the video](./GIFs/.gif)
+![screenshot of homepage](./public/images/homepage.png)
+![screenshot of login-page](./public/images/login-page.png)
+![screenshot of dashboard](./public/images/dashboard.png)
+![screenshot of edit-entry](./public/images/edit-entry.png)
 
 ## Requirements
 
@@ -53,9 +52,9 @@ THEN I am automatically signed out of the site
 
 There is no need to install anything, to view the Tech Blog simply follow the link below. 
 
-See deployed site here: [Deployed site]() 
+See deployed site here: [Deployed site](https://jd-jaramillo-tech-blog.herokuapp.com/) 
 
-See repository here: [GitHub Repo]()
+See repository here: [GitHub Repo](https://github.com/JD-Jaramillo/Tech-Blog)
 
 ## Contributing
 
