@@ -22,14 +22,14 @@
 </section>
 
 {{#if posts}}
-<section>
+<section class="dashboard-entries">
     <h2 class="entry-title">Your entries</h2>
     <ol>
         {{#each posts as |post|}}
         <li>
             {{> entry-info post }}
+            <a id="edit-entry" href="/dashboard/edit/{{post.id}}" class="edit-link">Edit entry</a>
         </li>
-        <a id="edit-entry" href="/dashboard/edit/{{post.id}}" class="edit-link">Edit entry</a>
         {{/each}}
     </ol>
 </section>
